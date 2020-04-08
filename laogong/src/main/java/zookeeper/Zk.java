@@ -17,7 +17,7 @@ import java.util.concurrent.locks.Lock;
  * @date: 2020-04-06
  **/
 public class Zk implements Lock {
-    private static CountDownLatch cdl = new CountDownLatch(1);
+    private CountDownLatch cdl = new CountDownLatch(1);
 
     private static final String IP_PORT = "127.0.0.1:2181";
     private static final String Z_NODE = "/LOCK";
